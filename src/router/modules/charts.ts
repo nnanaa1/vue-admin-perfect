@@ -14,6 +14,12 @@ const chartsRouter = {
     },
     children: [
         {
+            path: 'onfigureDataScreen',
+            component: () => import('@/views/onfigureDataScreen/index.vue'),
+            name: 'onfigureDataScreen',
+            meta: { title: '配置数据大屏',  roles:['other'] , icon: 'MenuIcon' }
+        },
+        {
             path: 'migration',
             component: () => import('@/views/charts/migration.vue'),
             name: 'migration',
