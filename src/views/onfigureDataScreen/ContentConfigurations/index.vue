@@ -45,7 +45,8 @@ const dragHandle = (e)=>{
   // 获取拖拽数据
   const drayDataString = e!.dataTransfer!.getData('ChartData')
   console.log('==2=1',e!.dataTransfer)
-  let str = {"key":"BarCommon",
+  let str = {
+    "key":"BarCommon",
     "chartKey":"VBarCommon",
     "conKey":"VCBarCommon",
     "title":"柱状图",
